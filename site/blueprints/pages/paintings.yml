@@ -1,0 +1,31 @@
+title: Current
+type: pages
+icon: 📰
+
+options:
+  url: false
+  status: false
+  delete: false
+
+sections:
+  listed:
+    type: pages
+    label: Published
+    status: listed
+    info: "{{ page.specs }}"
+    layout: cards  
+    template: painting
+  unlisted: 
+    type: pages
+    label: Unlisted
+    status: unlisted
+    layout: list  
+    template: painting
+  drafts:
+    parent: site.find("paintings")
+    template: painting
+    type: pages
+    label: Drafts
+    status: draft
+    layout: list
+  

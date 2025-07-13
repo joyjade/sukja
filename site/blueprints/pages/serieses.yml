@@ -1,0 +1,23 @@
+title: Series
+type: pages
+icon: dots
+
+options:
+  url: false
+  status: false
+  delete: false
+
+sections:
+  listed:
+    parent: site.find("series")
+    type: pages
+    label: Published
+    status: listed, unlisted
+    layout: cardlets  
+  drafts:
+    parent: site.find("series")
+    type: pages
+    label: Drafts
+    status: draft
+    layout: cardlets
+  

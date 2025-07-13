@@ -17,13 +17,13 @@
     <div class="title">
       <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
     </div>
+    <nav>
+      <?php foreach ($site->children()->listed() as $item): 
+        ?>
+        <div>
+          <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+        </div>
+      <?php endforeach ?>
+    </nav>
   </div>
 
-	<nav>
-    <?php foreach ($site->children()->listed() as $item): 
-      ?>
-      <div>
-        <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
-      </div>
-    <?php endforeach ?>
-</nav>
