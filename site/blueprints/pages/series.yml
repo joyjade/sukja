@@ -1,40 +1,17 @@
 title: Series
 
-columns: 
-  main:
-    width: 2/3
-    sections:
-      listed:
-        type: pages
-        label: Published
-        status: listed
-        info: "{{ page.specs }}"
-        layout: cardlets  
-        template: painting
-      drafts:
-        type: pages
-        label: Drafts
-        status: drafts
-        template: painting
-        layout: list
-      # meta:
-      #   type: fields
-      #   fields:
-    # fields:
-    #   paintings:
-    #     label: Paintings
-    #     type: pages
-    #     parent: site.find("painting")
-
-    #   works:
-    #     label: Works
-    #     type: pages
-    #     template: painting
-      
-        
-  sidebar:
-    width: 1/3
+sections: 
+  description: 
+    type: fields
     fields: 
       text:
         label: Description
         type: textarea
+
+  paintings: 
+    type: pages
+    template: painting
+    layout: table
+    columns: 
+      specs: true
+   
