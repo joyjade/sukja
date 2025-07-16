@@ -13,11 +13,13 @@ sections:
     type: pages
     label: Published
     status: listed, unlisted
-    layout: cardlets  
+    layout: cardlets
+    template: series  
   drafts:
     parent: site.find("series")
     type: pages
     label: Drafts
     status: draft
     layout: cardlets
+    template: series
   

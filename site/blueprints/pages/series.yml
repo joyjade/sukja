@@ -9,9 +9,13 @@ sections:
         type: textarea
 
   paintings: 
-    type: pages
-    template: painting
-    layout: table
-    columns: 
-      specs: true
+    type: files
+    
+
+# This is a table layout for pages
+    # type: pages
+    # template: painting
+    # layout: table
+    # columns: 
+    #   specs: true
    

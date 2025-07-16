@@ -1,0 +1,45 @@
+title: Painting
+
+create:
+  format: webp
+  strip: true
+
+
+  # width: 500
+  # height: 500
+  # crop: true
+
+  
+accept: image/jpeg, image/png
+orientation: portraint
+focus: false
+
+image:
+  cover: true
+  ratio: 1/1
+  back: white
+
+
+fields:
+  dimensions: 
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+    required: true
+  align:
+    label: Align
+    type: select
+    options:
+      - left
+      - center
+      - right
+    width: 1/2
+  caption:
+    label: Caption
+    type: textarea
+
+
+
+
+
