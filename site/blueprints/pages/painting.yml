@@ -1,6 +1,8 @@
 title: Painting
 
-image: page.cover.toFile
+image: page.files.sorted.first
+
+# page.cover.toFile
 
 columns: 
   main:
@@ -31,9 +33,9 @@ columns:
       materials:
         width: 1/3
         type: text
-      cover: 
-        type: files
-        multiple: false
+      # cover: 
+      #   type: files
+      #   multiple: false
 
   
 
