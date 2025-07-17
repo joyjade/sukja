@@ -1,13 +1,22 @@
 title: Painting
 
-sections:
-  photos:
-    label: Images
-    type: files
-    template: painting-image
-    layout: cards
-  details:
-    type: fields
+image: page.cover.toFile
+
+columns: 
+  main:
+    width: 2/3
+    sections:
+      photos:
+        label: Images
+        type: files
+        template: painting-image
+        layout: cards
+        empty: Upload images for this painting
+        size: large
+        text: '{{ file.dimensions }}'
+        
+  sidebar:
+    width: 1/3
     fields: 
       year:
         label: Date
@@ -22,19 +31,11 @@ sections:
       materials:
         width: 1/3
         type: text
+      cover: 
+        type: files
+        multiple: false
 
   
 
-# columns: 
-#   main:
-#     width: 2/3
-#     fields:
-#       images:
-#         label: Images
-#         type: files
-#         template: painting-image
-#         layout: cards
-        
-#   sidebar:
-#     width: 1/3
+
 #     

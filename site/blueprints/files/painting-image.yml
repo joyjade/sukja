@@ -1,6 +1,8 @@
 title: Painting
 
-#accepts
+accept: 
+  mime: image/*
+  # minwidth
 #resizing
 
 image:
