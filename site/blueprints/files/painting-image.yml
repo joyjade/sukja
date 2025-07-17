@@ -1,0 +1,21 @@
+title: Painting
+
+#accepts
+#resizing
+
+image:
+  back: white
+  cover: true
+
+empty: No painting yet
+
+fields: 
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+  photographer:
+    label: Credit
+    type: text
+    width: 1/2
+    

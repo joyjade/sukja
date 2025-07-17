@@ -1,17 +1,40 @@
 title: Painting
 
-columns: 
-  main:
-    width: 2/3
-    fields:
-      images:
-        label: Images
-        type: files
-        
-        
-  sidebar:
-    width: 1/3
+sections:
+  photos:
+    label: Images
+    type: files
+    template: painting-image
+    layout: cards
+  details:
+    type: fields
     fields: 
+      year:
+        label: Date
+        type: date
+        display: YYYY
+        step: month
+        width: 1/3
       specs:
-        label: Dimensions, Materials
+        width: 1/3
+        label: Dimensions
         type: text
+      materials:
+        width: 1/3
+        type: text
+
+  
+
+# columns: 
+#   main:
+#     width: 2/3
+#     fields:
+#       images:
+#         label: Images
+#         type: files
+#         template: painting-image
+#         layout: cards
+        
+#   sidebar:
+#     width: 1/3
+#     

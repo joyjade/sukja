@@ -2,11 +2,15 @@ Title: Every Falls Wings
 
 ----
 
-Paintings: - file://B2nAzZ04Esj7FmC9
+Text: Every fall there is a wing that falls at night. Gold is the illumination against that fall. These paintings explore the perpetual haze that drizzles over our eyes. Every fall there is a wing that falls at night. Gold is the illumination against that fall. These paintings explore the perpetual haze that drizzles over our eyes.
 
 ----
 
-Text: Every fall there is a wing that falls at night. Gold is the illumination against that fall. These paintings explore the perpetual haze that drizzles over our eyes. Every fall there is a wing that falls at night. Gold is the illumination against that fall. These paintings explore the perpetual haze that drizzles over our eyes.
+Cover: - page://X0hBKXhM5MWSMm2B
+
+----
+
+Paintings: - file://B2nAzZ04Esj7FmC9
 
 ----
 

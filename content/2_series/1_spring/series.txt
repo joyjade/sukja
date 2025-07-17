@@ -2,15 +2,19 @@ Title: Spring
 
 ----
 
+Text: 
+
+----
+
+Cover: - page://TIxcHdRYUMAvT18Z
+
+----
+
 Paintings: 
 
 ----
 
 Works: - page://TIxcHdRYUMAvT18Z
-
-----
-
-Text: 
 
 ----
 

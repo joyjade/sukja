@@ -1,22 +1,63 @@
 title: Series
 
-columns: 
-  main:
-    width: 2/3
-    sections:
-      listed:
+image: page.cover.toPage.image
+
+
+sections: 
+  description:
+    type: fields
+    fields: 
+      text:
+        label: Description
+        type: textarea
+      cover:
         type: pages
-        label: Published
-        status: listed
-        info: "{{ page.specs }}"
-        layout: cardlets  
-        template: painting
-      drafts:
-        type: pages
-        label: Drafts
-        status: drafts
-        template: painting
-        layout: list
+        multiple: false
+        query: page.children
+        layout: cardlets
+  paintings:
+    type: pages
+    template: painting
+    empty: "No paintings yet"
+    layout: table
+    columns:
+      title: 
+        width: 1/2
+      specs: 
+        width: 1/6
+      materials: 
+        width: 1/6
+      year: 
+        label: Date
+        value: "{{ page.year.toDate('Y') }}"
+        type: text
+        width: 1/6
+
+
+
+
+    
+
+  # cover:
+  #   type: files
+  #   cover:
+  #   type: files
+  #   label: Cover
+  #   layout: cards
+  #   info: "{{ file.dimensions }}"
+  #   template: cover
+  #   min: 1
+  #   max: 3
+  # gallery:
+  #   type: files
+  #   label: Gallery
+  #   template: image
+  # drafts:
+  #   type: pages
+  #   label: Drafts
+  #   status: drafts
+  #   template: painting
+  #   layout: list
       # meta:
       #   type: fields
       #   fields:
@@ -32,9 +73,3 @@ columns:
     #     template: painting
       
         
-  sidebar:
-    width: 1/3
-    fields: 
-      text:
-        label: Description
-        type: textarea
