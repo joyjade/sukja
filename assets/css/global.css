@@ -95,17 +95,17 @@ footer ul li:first-of-type {
 
 /* PAGES */
 
-.paintings section, .series section {
+.paintings section, .serieses section, .series .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
 
-.series section { 
+.serieses section, .series .gallery { 
   grid-template-columns: repeat(2, 1fr);
 }
 
-.painting, .series section .series {
+section .painting, section .series {
   padding: 15%;
   text-align: center;
   color: var(--primary-color);
@@ -125,6 +125,10 @@ footer ul li:first-of-type {
   max-width: 300px;
 }
 
-.series img {
+.serieses img, .series img {
   margin-top: 1rem;
+}
+
+.series h1 {
+  text-align: center;
 }
