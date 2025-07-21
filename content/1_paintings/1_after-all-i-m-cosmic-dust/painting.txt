@@ -14,8 +14,4 @@ Materials:
 
 ----
 
-Cover: - file://uvWwMwGWm97lNjca
-
-----
-
 Uuid: D9JviGEETGtM43Pw

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Untitled Sans";
+  font-style: normal;
+  src: url('assets/type/UntitledSans-Regular.otf');
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  font-style: italic;
+  src: url('assets/type/UntitledSans-RegularItalic.otf');
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  font-weight: 500;
+  src: url('assets/type/UntitledSans-Medium.otf');
+}

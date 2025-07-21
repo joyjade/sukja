@@ -14,3 +14,4 @@ sections:
     template: painting
     info: "{{ page.specs }}"
     layout: cards
+    

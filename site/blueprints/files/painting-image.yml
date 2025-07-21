@@ -5,9 +5,12 @@ accept:
   # minwidth
 #resizing
 
+create:
+  width: 1200
+
 image:
   back: white
-  cover: true
+  cover: false
 
 empty: No painting yet
 

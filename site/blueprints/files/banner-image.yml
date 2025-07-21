@@ -1,0 +1,19 @@
+title: Banner Image
+
+image:
+  back: white
+  ratio: 16/9
+  cover: true
+
+options:
+  changeTemplate: true
+
+fields: 
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+  photographer:
+    label: Credit
+    type: text
+    width: 1/2

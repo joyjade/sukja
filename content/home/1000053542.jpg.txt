@@ -1,0 +1,9 @@
+Sort: 2
+
+----
+
+Template: banner-image
+
+----
+
+Uuid: wPnBU6ZV2ZDIx1se

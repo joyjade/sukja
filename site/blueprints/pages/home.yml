@@ -1,0 +1,15 @@
+title: Home
+
+options:
+  # url: false
+  status: false
+  delete: false
+  duplicate: false
+
+sections:
+  banner:
+    type: files
+    template: banner-image
+    layout: cards
+    size: huge
+    ratio: 16/9
