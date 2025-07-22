@@ -1,0 +1,42 @@
+title: Contact
+icon: 📮
+
+image:
+  query: false
+  back: black
+
+
+options:
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  move: false
+
+
+columns: 
+
+  left: 
+    width: 2/5
+    fields: 
+      about_label:
+        type: text
+        label: Link text on About page 
+      secret: 
+        type: text
+        label: Authorization Key
+      info:
+        label: ""
+        type: info
+        text: |
+          This contact form uses a third party tool. Go [here](https://web3forms.com/#start) and input the email you want to receive messages at. You'll get sent an Authorization Key to input.
+  right:
+    width: 3/5
+    fields: 
+      subject:
+        label: Email Subject
+        help: This is the subject line that will show up in your inbox. It will be appended with the name of person filling out the form
+        type: text
+      success:
+        type: text
+        label: Thank You Message
+        help: The message after someone fills out the form and sends it off!

@@ -1,0 +1,10 @@
+title: CV
+
+fields:
+  about_label:
+    type: text
+    label: Link text on About page
+  cv:
+    label: CV
+    type: textarea
+    size: huge

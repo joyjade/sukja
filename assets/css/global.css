@@ -1,10 +1,12 @@
 /* GLOBAL */
 :root {
   --main-font: 'Times New Roman', Times, serif;
+  --sans: "Untitled Sans", Arial, Helvetica, sans-serif;
   --primary-color: #505050;
-  --secondary-color: #FF0000;
-  --thin-border: 1.5px solid var(--secondary-color);
+  --secondary-color: #9D57FF;
+  --thin-border: 1.5px solid var(--primary-color);
   --spacing: 1rem 1.5rem;
+
  }
  
  /* RESETS */
@@ -48,6 +50,15 @@ h1, h2, h3, h4, h5, h6 {
 
 a:hover {
   text-decoration: underline;
+}
+
+.purple-link {
+  text-decoration: underline;
+  color: var(--secondary-color)
+}
+
+.purple-link:hover {
+  color: black;
 }
 
 /* LAYOUT */
@@ -117,7 +128,7 @@ section .painting, section .series {
 
 .painting .subtitle {
   opacity: 0.8;
-  font-family: "Untitled Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--sans);
 }
 
 .painting figure img {
@@ -131,4 +142,44 @@ section .painting, section .series {
 
 .series h1 {
   text-align: center;
+}
+
+.about section:first-of-type {
+  width: 80%;
+}
+
+.about section {
+  font-size: 1.3rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
+
+.about .links {
+  padding: 2rem 0 3rem;
+  display: inline-block;
+  
+}
+
+.about .links a {
+  margin-right: 1rem;
+}
+
+.about .insta > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv section {
+  line-height: 1.5;
+}
+
+.cv strong {
+  font-family: var(--sans);
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  text-decoration: underline;
 }

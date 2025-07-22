@@ -1,0 +1,15 @@
+title: About
+
+sections:
+  main: 
+    type: fields
+    fields: 
+      bio: 
+        type: textarea
+        label: About
+      instagram:
+        type: link
+
+  inner:
+    label: More
+    type: pages
