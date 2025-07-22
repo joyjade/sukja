@@ -18,12 +18,18 @@
       <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
     </div>
     <nav>
-      <?php foreach ($site->children()->listed() as $item): 
-        ?>
-        <div>
-          <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
-        </div>
-      <?php endforeach ?>
+      <div class="hamb">
+        <!-- <label for="side-menu"> -->
+          <div class="hamb-line"></div>
+      </div>
+      <ul class="m-nav">
+        <?php foreach ($site->children()->listed() as $item): ?>
+          <li>
+            <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+          </li>
+        <?php endforeach ?>
+      </ul>
+
     </nav>
   </div>
 

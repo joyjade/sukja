@@ -6,7 +6,6 @@
   --secondary-color: #9D57FF;
   --thin-border: 1.5px solid var(--primary-color);
   --spacing: 1rem 1.5rem;
-
  }
  
  /* RESETS */
@@ -48,8 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--main-font);
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 a:hover {
-  text-decoration: underline;
+  color: black;
 }
 
 .purple-link {
@@ -61,6 +64,71 @@ a:hover {
   color: black;
 }
 
+
+.arrow {
+  width: 30px;
+}
+
+.nav-arrows .left .arrow {
+  transform: rotate(180deg);
+}
+
+.nav-arrows {
+  display: grid;
+  top: 50%;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  width: 96vw;
+}
+
+.nav-arrows > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* NAV */
+
+nav {
+  position: relative;
+  display: flex;
+  /* margin-bottom: 2rem; */
+}
+
+nav a {
+  text-transform: capitalize;
+  margin-left: 2rem;
+  color: var(--primary-color);
+}
+
+nav a.active {
+  color: black;
+}
+
+nav a:hover, .title a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 8px;
+  text-decoration-color: black;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 8px;
+  text-decoration-color: black;
+}
+
+/* desktop */
+@media screen and (min-width: 401px) {  
+  .hamb {
+    display: none;
+  }
+
+  .m-nav {
+    display: flex;
+  }
+}
+
 /* LAYOUT */
 
 body {
@@ -70,23 +138,13 @@ body {
 
 .header {
  font-size: calc(1.2rem + 0.22vw);
-
+ /* width: calc(100% - 3rem); */
  display: flex;
  justify-content: space-between;
 }
 
-nav {
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-nav a {
-  text-transform: capitalize;
-  margin-left: 2rem;
-}
-
-.section {
-  width: inherit; 
+section:first-of-type {
+  margin-top: 2rem;
 }
 
 .feature-img {
@@ -104,23 +162,26 @@ footer ul li:first-of-type {
   padding-right: 2rem;
 }
 
-/* PAGES */
+/* PAGES--PAINTINGS */
 
 .paintings section, .serieses section, .series .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  width: 100%;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+
   padding: 1rem;
 }
 
-.serieses section, .series .gallery { 
-  grid-template-columns: repeat(2, 1fr);
-}
-
 section .painting, section .series {
-  padding: 15%;
+  padding: 3rem 2rem;
   text-align: center;
   color: var(--primary-color);
 }
+
 
 .painting h3 {
   margin-bottom: 0.2rem;
@@ -131,17 +192,63 @@ section .painting, section .series {
   font-family: var(--sans);
 }
 
-.painting figure img {
-  margin-top: 1rem;
+.paintings .painting figure img {
   max-width: 300px;
 }
 
-.serieses img, .series img {
-  margin-top: 1rem;
+
+/* PAINTING */
+
+.painting section {
+  margin-top: 0;
 }
+
+.painting figure img {
+  margin-top: 1rem;
+  max-width: 450px;
+}
+
+.painting .painting h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.painting .painting {
+  padding: 1rem 2rem;
+}
+
+
+@media screen and (min-width: 371px) {  
+  .section .painting, section .series, .paintings .painting {
+    width: 33.33%;
+  }
+  .serieses section .series, .series .gallery .series { 
+    width: 50%;
+  }
+}
+
+/* SERIES */
+
+.serieses section, .series section, .paintings section  {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .series h1 {
   text-align: center;
+}
+
+.serieses img, .series img {
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+
+.series section.main {
+  padding-top: 3rem;
+
 }
 
 .about section:first-of-type {
