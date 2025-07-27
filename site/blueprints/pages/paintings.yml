@@ -1,6 +1,9 @@
 title: Current
 type: pages
-icon: 📰
+icon: palette
+
+image:
+  back: black
 
 options:
   url: false

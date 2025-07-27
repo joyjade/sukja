@@ -1,12 +1,13 @@
 title: Painting
 
+focus: false
 accept: 
   mime: image/*
   # minwidth
 #resizing
 
 create:
-  width: 1200
+  width: 2000
 
 image:
   back: white

@@ -1,23 +1,42 @@
 title: Series
 type: pages
-icon: dots
+icon: copy
+
+image:
+  back: black
 
 options:
   url: false
   status: false
   delete: false
 
-sections:
-  listed:
-    parent: site.find("series")
-    type: pages
-    label: Published
-    status: listed, unlisted
-    layout: cardlets  
-  drafts:
-    parent: site.find("series")
-    type: pages
-    label: Drafts
-    status: draft
-    layout: cardlets
-  
+columns:
+  - width: 2/3
+    sections:
+      listed:
+        parent: site.find("series")
+        type: pages
+        label: Published
+        status: listed
+        layout: cardlets  
+        template: series
+        sortBy: status asc year desc
+
+  - width: 1/3
+    sections: 
+      drafts:
+        parent: site.find("series")
+        type: pages
+        label: Drafts
+        status: draft
+        layout: list
+        template: series
+      unlisted:
+        parent: site.find("series")
+        type: pages
+        label: Live 
+        status: unlisted
+        layout: list
+        template: series
+        help: Live but not in feed, need a direct link
+      

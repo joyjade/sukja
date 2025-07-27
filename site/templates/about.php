@@ -1,8 +1,6 @@
 <?php snippet('nav') ?>
   <section>
-    <p>
-      <?= $page->bio() ?>
-    </p>
+    <?= $page->bio()->kirbytext() ?>
   </section>
   <section class="links">
     <?php foreach($page->children() as $link): ?>

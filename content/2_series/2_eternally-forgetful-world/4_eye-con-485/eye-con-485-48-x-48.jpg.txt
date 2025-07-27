@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: c1nsnq2RNMxnTeXS
+
+----
+
+Template: painting-image

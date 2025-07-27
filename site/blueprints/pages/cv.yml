@@ -1,4 +1,9 @@
 title: CV
+icon: "info-card"
+
+image:
+  back: black
+  color: white
 
 fields:
   about_label:

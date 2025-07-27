@@ -1,6 +1,6 @@
 <?php snippet('nav') ?>
 <section class="main">
-  <?php foreach ($page->children()->listed() as $series): ?>
+  <?php foreach ($page->children()->listed()->sortBy('year', 'desc') as $series): ?>
     <div class="series">
       <a href="<?= $series->url() ?>">
       <h3><?= $series->title() ?></h3>

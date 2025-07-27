@@ -2,7 +2,11 @@ title: Painting
 
 image: page.files.sorted.first
 
-# page.cover.toFile
+create:
+  title:
+    label: Painting
+  fields:
+    - specs
 
 columns: 
   main:
@@ -33,6 +37,7 @@ columns:
       materials:
         width: 1/3
         type: text
+        help: this will override materials set in the series
       # cover: 
       #   type: files
       #   multiple: false

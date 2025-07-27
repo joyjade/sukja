@@ -82,4 +82,16 @@
     width: calc(100% - 2rem);
     position: fixed;
   }
+
+  section:first-of-type {
+    margin-top: 4rem;
+  }
+
+  .about section:first-of-type {
+    width: 100%
+  }
+
+  .about p {
+    font-size: 1.3rem;  
+  }
 }

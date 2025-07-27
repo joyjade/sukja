@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: LS9MgOW5FHxvdvoV
+
+----
+
+Template: painting-image

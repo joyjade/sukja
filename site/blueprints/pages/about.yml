@@ -1,4 +1,8 @@
 title: About
+icon: user
+
+image:
+  back: black
 
 sections:
   main: 

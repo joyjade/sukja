@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: 8pzEDYS7DELO1DEL
+
+----
+
+Template: painting-image
