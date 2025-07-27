@@ -1,6 +1,8 @@
 title: Painting
 
-image: page.files.sorted.first
+image: 
+  query: page.files.sorted.first
+  back: white
 
 create:
   title:

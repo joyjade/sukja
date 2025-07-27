@@ -66,7 +66,7 @@ a:hover {
 
 
 .arrow {
-  width: 30px;
+  width: 25px;
 }
 
 .nav-arrows .left svg {
@@ -74,11 +74,14 @@ a:hover {
 }
 
 .nav-arrows {
-  display: grid;
-  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  top: 45%;
   position: absolute;
-  grid-template-columns: repeat(2, 1fr);
-  width: 96vw;
+  width: 150%;
+  transform: translateX(-22%);
+  /* grid-template-columns: repeat(2, 1fr);
+  width: 96vw; */
 }
 
 .nav-arrows > div {
@@ -86,6 +89,15 @@ a:hover {
   justify-content: center;
 }
 
+.back-x {
+  position: absolute;
+  top: 45px;
+  right: 1rem;
+}
+
+.back-x svg {
+  width: 50px;
+}
 /* NAV */
 
 nav {
@@ -119,7 +131,7 @@ nav a.active {
 }
 
 /* desktop */
-@media screen and (min-width: 401px) {  
+@media screen and (min-width: 716px) {  
   .hamb {
     display: none;
   }
@@ -138,7 +150,6 @@ body {
 
 .header {
  font-size: calc(1.2rem + 0.22vw);
- /* width: calc(100% - 3rem); */
  display: flex;
  justify-content: space-between;
 }
@@ -156,23 +167,30 @@ footer ul {
   justify-content: center;
   font-size: 1.2rem;
   padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 footer ul li:first-of-type {
   padding-right: 2rem;
 }
 
-/* PAGES--PAINTINGS */
+footer a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.pseudo-footer {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* PAINTING + SERIES GRIDS */
 
 .paintings section, .serieses section, .series .gallery {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
   display: flex;
   width: 100%;
-  
   flex-wrap: wrap;
   justify-content: center;
-
   padding: 1rem;
 }
 
@@ -187,11 +205,23 @@ section .painting, section .series {
   margin-bottom: 0.2rem;
 }
 
+.series h3 {
+  font-style: italic;
+}
+
 .painting .subtitle, .series .subtitle {
   opacity: 0.7;
   font-size: 0.9rem;
   /* padding-top: 0.25rem; */
   font-family: var(--sans);
+}
+
+.painting figure img, .series figure img, .serieses img {
+  margin-top: 1.5rem;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 500px;
 }
 
 .paintings .painting figure img {
@@ -212,12 +242,6 @@ section .painting, section .series {
   align-items: center;
 }
 
-.painting figure img {
-  margin-top: 1.5rem;
-  max-width: 450px;
-  height: auto;
-}
-
 .painting .painting h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -225,6 +249,7 @@ section .painting, section .series {
 
 .painting .painting {
   padding: 1rem 2rem;
+  position: relative;
 }
 
 
@@ -258,14 +283,6 @@ section .painting, section .series {
   margin-top: 0.25rem;
 }
 
-.serieses img, .series img {
-  max-width: 400px;
-  margin-top: 1rem;
-  max-height: 500px;
-  width: auto;
-  height: auto;
-}
-
 .series .description {
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -277,12 +294,14 @@ section .painting, section .series {
 
 }
 
+/* OTHER PAGES */
+
 .about section:first-of-type {
   width: 80%;
 }
 
 .about section {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .about p {

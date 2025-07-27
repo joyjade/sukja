@@ -12,4 +12,5 @@
     </div>
   <?php endforeach ?>	
 </section>
+
 <?php snippet('footer') ?>

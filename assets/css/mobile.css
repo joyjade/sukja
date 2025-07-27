@@ -62,7 +62,7 @@
 
 
 /* mobile */
-@media screen and (max-width: 400px) {  
+@media screen and (max-width: 715px) { 
   :root {
     --spacing: 0.75rem 1rem;
   }

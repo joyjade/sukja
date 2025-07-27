@@ -20,21 +20,29 @@
         <p class="subtitle"><?= $materials ?></p>
       <?php endif ?>
       <p class="subtitle"><?= $page->specs() ?></p>
-  </div>
-
-
-  <div class="nav-arrows">
-    <div class="left">
-      <a href="<?=$page->prevListed() ? $page->prevListed()->url() : '' ?>">
-        <?= asset('assets/icons/arrow-lines.svg')->read()?>
+      <div class="nav-arrows">
+        <div class="left">
+          <?php if($page->prevListed()) :?>
+            <a href="<?=$page->prevListed()->url()?>">
+              <?= asset('assets/icons/arrow-lines.svg')->read()?>
+            </a>
+          <?php endif ?>
+        </div>
+        <div class="right">
+          <?php if($page->nextListed()) :?>
+          <a href="<?= $page->nextListed()->url() ?>">
+            <?= asset('assets/icons/arrow-lines.svg')->read()?>
+          </a>
+          <?php endif ?>
+        </div>
+      </div>
+    </div>
+    <div class="back-x">
+      <a href="<?= $page->parent()->url() ?>">
+        <?= asset('assets/icons/x.svg')->read()?>
       </a>
     </div>
-    <div class="right">
-      <a href="<?=$page->nextListed() ? $page->nextListed()->url() : ''?>">
-        <?= asset('assets/icons/arrow-lines.svg')->read()?>
-      </a>
-    </div>
-  </div>
 </section>
+
 
 <?php snippet('footer') ?>
