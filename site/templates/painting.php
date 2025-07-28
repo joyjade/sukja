@@ -3,7 +3,7 @@
 <section class="main">
   <div class="painting">
     <?php foreach ($page->files()->sorted() as $photo): ?>
-     <?php snippet ('painting-srcset', ['photo' => $photo])?>
+     <?php snippet ('painting-srcset', ['photo' => $photo, 'max' => 'full'])?>
     <?php endforeach ?>	
     <h3><?= $page->title() ?></h3>
 

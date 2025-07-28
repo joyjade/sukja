@@ -7,7 +7,7 @@
       <?php if ($cover = $series->cover()->toPage()): ?>
         <?php 
           if ($photo = $cover->files()->sorted()->first()): 
-            snippet ('painting-srcset', ['photo' => $photo]);
+            snippet ('painting-srcset', ['photo' => $photo, 'max' => 'grid']);
           endif; ?>
       <?php endif ?>
       </a>

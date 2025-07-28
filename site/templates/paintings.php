@@ -8,7 +8,7 @@
 
       <?php 
         $photo = $painting->images()->sorted()->first();
-         snippet ('painting-srcset', ['photo' => $photo])
+         snippet ('painting-srcset', ['photo' => $photo, 'max' => 'grid'])
       ?>
 
       </a>

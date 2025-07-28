@@ -221,6 +221,11 @@ section .painting, section .series {
   max-width: 300px;
 }
 
+.painting figure img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
 
 /* PAINTING */
 
@@ -290,6 +295,11 @@ section .painting, section .series {
 }
 
 /* OTHER PAGES */
+
+
+.home section {
+  min-height: 78vh;
+}
 
 .about section:first-of-type {
   width: 80%;
