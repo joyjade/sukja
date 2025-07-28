@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: RdiC3Y07DzLJDYKr
+
+----
+
+Template: painting-image

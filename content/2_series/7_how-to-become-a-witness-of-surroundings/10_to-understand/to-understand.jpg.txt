@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: sYauOSKbbsJP4OWs
+
+----
+
+Template: painting-image

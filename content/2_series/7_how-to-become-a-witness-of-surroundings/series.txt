@@ -2,7 +2,7 @@ Title: How To Become a Witness of Surroundings
 
 ----
 
-Cover: 
+Cover: - page://kLOpmYX9POi6uo52
 
 ----
 
@@ -11,6 +11,10 @@ Text:
 ----
 
 Year: 2022-01-01
+
+----
+
+Materials: 
 
 ----
 

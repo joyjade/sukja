@@ -1,9 +1,0 @@
-Sort: 1
-
-----
-
-Uuid: r95O6vCuFGImgVVw
-
-----
-
-Template: painting-image

@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: cd4SPFlYWREpJleC
+
+----
+
+Template: painting-image
