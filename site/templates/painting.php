@@ -3,19 +3,11 @@
 <section class="main">
   <div class="painting">
     <?php foreach ($page->files()->sorted() as $photo): ?>
-      <figure>
-        <img
-            alt="<?= $photo->alt() ?>"
-            src="<?= $photo->resize(400)->url() ?>"
-            srcset="<?= $photo->srcset([300, 600, 900, 1200, 1800]) ?>"
-            width="<?= $photo->resize(1800)->width() ?>"
-            height="<?= $photo->resize(1800)->height() ?>"
-        >
-      </figure>
+     <?php snippet ('painting-srcset', ['photo' => $photo])?>
     <?php endforeach ?>	
-      <h3><?= $page->title() ?></h3>
+    <h3><?= $page->title() ?></h3>
 
-      <?php $materials = $page->materials()->isNotEmpty() ? $page->materials() : $page->parent()->materials();
+    <?php $materials = $page->materials()->isNotEmpty() ? $page->materials() : $page->parent()->materials();
         if ($materials): ?>
         <p class="subtitle"><?= $materials ?></p>
       <?php endif ?>

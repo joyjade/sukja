@@ -5,9 +5,12 @@
       <a href="<?= $painting->url() ?>">
       <h3><?= $painting->title() ?></h3>
       <p class="subtitle"><?= $painting->specs() ?></p>
-        <figure>
-          <img src="<?= $painting->images()->sorted()->first()->url() ?>" alt="">
-        </figure>
+
+      <?php 
+        $photo = $painting->images()->sorted()->first();
+         snippet ('painting-srcset', ['photo' => $photo])
+      ?>
+
       </a>
     </div>
   <?php endforeach ?>	
