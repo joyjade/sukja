@@ -1,3 +1,15 @@
+/* desktop */
+
+@media screen and (min-width: 716px) {  
+  .hamb {
+    display: none;
+  }
+
+  .m-nav {
+    display: flex;
+  }
+}
+
 /* ham nav */
 
 .m-nav.show {
@@ -12,11 +24,11 @@
 }
 
 .hamb {
-  --ham-width: 22px;
+  --ham-width: 30px;
   cursor: pointer;
   position: relative;
   width: var(--ham-width);
-  height: 22px;
+  height: var(--ham-width);
   /* margin: 5px; */
 }
 
@@ -30,11 +42,11 @@
 }
 
 .hamb-line:before {
-  top: 8px;
+  top: 9px;
 }
 
 .hamb-line:after {
-  top: 16px;
+  top: 18px;
 }
 
 .hamb-line, .hamb-line:after, .hamb-line:before {
@@ -49,7 +61,7 @@
 
 
 .hamb.show .hamb-line {
-  transform: translate3d(0, 8px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 
 .hamb.show .hamb-line:before {
@@ -57,14 +69,57 @@
 }
 
 .hamb.show .hamb-line:after {
-  transform: translate3d(0, -16px, 0) rotate(-90deg);
+  transform: translate3d(0, -18px, 0) rotate(-90deg);
+}
+
+
+
+@media screen and (min-width: 981px) {  
+  .section .painting, section .series, .paintings .painting {
+    width: 33.33%;
+  }
+  .serieses section .series, .series .gallery .series { 
+    width: 50%;
+  }
+
+}
+
+/* tablet */
+
+@media screen and (max-width: 1200px) { 
+  .section .painting, section .series, .paintings .painting {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 980px) { 
+  section .painting, section .series {
+    padding: 3rem 0;
+  }
+
+  .serieses section .series, 
+  .series .gallery .series {
+    width: 100%;
+  }
+
+  .section .painting, section .series,
+  .paintings .painting {
+    width: 100%;
+  }
+
+  .nav-arrows {
+    width: 92vw;
+    transform: translateX(0);
+    bottom: 15px;
+    top: unset;
+  }
 }
 
 
 /* mobile */
 @media screen and (max-width: 715px) { 
   :root {
-    --spacing: 0.75rem 1rem;
+    --spacing: 0.75rem;
   }
   .hamb {
     display: inline-block;
@@ -79,7 +134,7 @@
   }
 
   .header {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1.5rem);
     position: fixed;
   }
 
@@ -94,4 +149,9 @@
   .about p {
     font-size: 1.3rem;  
   }
+
+  .back-x svg {
+    width: 25px;
+  }
+
 }

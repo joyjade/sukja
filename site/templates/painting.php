@@ -20,21 +20,21 @@
         <p class="subtitle"><?= $materials ?></p>
       <?php endif ?>
       <p class="subtitle"><?= $page->specs() ?></p>
-      <div class="nav-arrows">
-        <div class="left">
-          <?php if($page->prevListed()) :?>
-            <a href="<?=$page->prevListed()->url()?>">
-              <?= asset('assets/icons/arrow-lines.svg')->read()?>
-            </a>
-          <?php endif ?>
-        </div>
-        <div class="right">
-          <?php if($page->nextListed()) :?>
-          <a href="<?= $page->nextListed()->url() ?>">
+    </div>
+    <div class="nav-arrows">
+      <div class="left">
+        <?php if($page->prevListed()) :?>
+          <a href="<?=$page->prevListed()->url()?>">
             <?= asset('assets/icons/arrow-lines.svg')->read()?>
           </a>
-          <?php endif ?>
-        </div>
+        <?php endif ?>
+      </div>
+      <div class="right">
+        <?php if($page->nextListed()) :?>
+        <a href="<?= $page->nextListed()->url() ?>">
+          <?= asset('assets/icons/arrow-lines.svg')->read()?>
+        </a>
+        <?php endif ?>
       </div>
     </div>
     <div class="back-x">
