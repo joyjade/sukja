@@ -1,9 +1,0 @@
-Sort: 1
-
-----
-
-Uuid: NCjjWxdGPUPVBeQg
-
-----
-
-Template: painting-image

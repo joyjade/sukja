@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: 8402kpNzymrIiHMT
+
+----
+
+Template: painting-image

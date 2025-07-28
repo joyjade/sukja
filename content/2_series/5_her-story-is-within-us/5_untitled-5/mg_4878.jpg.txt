@@ -1,9 +1,0 @@
-Sort: 1
-
-----
-
-Uuid: H50VIMAyA419owqm
-
-----
-
-Template: painting-image

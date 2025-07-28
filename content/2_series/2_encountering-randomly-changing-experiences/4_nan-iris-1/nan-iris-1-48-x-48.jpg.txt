@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: LIPI9EYzD7rzhUNv
+
+----
+
+Template: painting-image

@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: 3NH8Las31JspD32h
+
+----
+
+Template: painting-image
