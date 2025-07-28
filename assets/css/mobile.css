@@ -132,6 +132,10 @@
     display: inline-block;
     z-index: 10;
   }
+
+  footer {
+    display: none;
+  }
   .m-nav {
     display: none;
   }
