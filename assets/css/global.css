@@ -98,6 +98,10 @@ a:hover {
 .back-x svg {
   width: 25px;
 }
+
+body.freeze {
+  overflow: hidden;
+}
 /* NAV */
 
 nav {
@@ -200,9 +204,8 @@ section .painting, section .series {
 }
 
 .painting .subtitle, .series .subtitle {
-  opacity: 0.7;
+  /* opacity: 0.7; */
   font-size: 0.9rem;
-  /* padding-top: 0.25rem; */
   font-family: var(--sans);
 }
 

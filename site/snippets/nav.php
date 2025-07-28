@@ -28,8 +28,22 @@
             <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
           </li>
         <?php endforeach ?>
+        <li>
+          <ul class="m-footer">
+            <?php 
+              $contact = $site->find('about/contact');
+              $insta = $site->find('about')->instagram();
+            ?>
+    
+            <li>
+              <a href="<?= $contact->url()?>">Contact</a>
+            </li>
+            <li>
+              <a href="<?= $insta ?>" target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </li>
       </ul>
-
     </nav>
   </div>
 

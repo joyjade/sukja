@@ -8,6 +8,11 @@
   .m-nav {
     display: flex;
   }
+
+  .m-footer {
+    display: none;
+  }
+
 }
 
 /* ham nav */
@@ -15,12 +20,15 @@
 .m-nav.show {
   display: block;
   position: absolute;
-  right: 0;
-  top: 100%;
-  padding-top: 1rem;
+  right: -0.75rem;
+  top: 0;
+  padding-top: 7rem;
   background-color: white;
-  opacity: 0.95;
+  opacity: 0.98;
   width: 100vw;
+  z-index: 1;
+  margin-top: -1rem;
+  height: 140vh;
 }
 
 .hamb {
@@ -81,7 +89,6 @@
   .serieses section .series, .series .gallery .series { 
     width: 50%;
   }
-
 }
 
 /* tablet */
@@ -121,16 +128,25 @@
   :root {
     --spacing: 0.75rem;
   }
-  .hamb {
+  .hamb, .m-footer {
     display: inline-block;
+    z-index: 10;
   }
   .m-nav {
     display: none;
   }
 
+  nav a {
+    margin-left: 0;
+  }
+
   .m-nav li {
     text-align: center;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .m-footer {
+    padding-top: 4rem;
   }
 
   .header {
@@ -150,8 +166,11 @@
     font-size: 1.3rem;  
   }
 
-  .back-x svg {
-    width: 25px;
+  .painting .painting {
+    padding: 1rem 0;
   }
 
+  .painting figure img, .series figure img, .serieses img {
+    max-width: 100%;
+  }
 }
