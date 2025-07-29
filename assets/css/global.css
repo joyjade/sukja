@@ -223,7 +223,7 @@ section .painting, section .series {
 
 .painting figure img {
   max-width: 600px;
-  max-height: 600px;
+  max-height: 00px;
 }
 
 
@@ -348,4 +348,54 @@ section .painting, section .series {
 
 .cv section a:hover {
   color: var(--secondary-color);
+}
+
+
+.contact section.content {
+  max-width: 600px; 
+  width: auto; 
+  margin: 5rem auto 0;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  height: 35px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--primary-color);
+}
+
+.contact form textarea {
+  min-height: 200px;
+}
+
+.contact form label {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.contact form button {
+  --button-color: var(--secondary-color); 
+  width: auto;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+  padding: 0.74rem 3rem;
+  background-color: white;
+  font-family: var(--main-font);
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  margin: 0 auto 5rem;
+}
+
+.contact form button:hover, .contact form button:active {
+  --button-color: black;
 }

@@ -1,5 +1,6 @@
 <figure>
   <img
+      loading="lazy"
       alt="<?= $photo->alt() ?>"
       src="<?= $photo->resize(400)->url() ?>"
       <?php if($max == 'full') : ?>
