@@ -223,7 +223,6 @@ section .painting, section .series {
 
 .painting figure img {
   max-width: 600px;
-  max-height: 00px;
 }
 
 
