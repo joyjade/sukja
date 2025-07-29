@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() { 
   mobileNav();
+
+  setRealViewportHeight();
+
+  // Update on resize (e.g. address bar scrolls)
+  window.visualViewport?.addEventListener('resize', setRealViewportHeight);
+
+  // Optional: Fallback if visualViewport is unsupported
+  window.addEventListener('resize', setRealViewportHeight);
 });
 
 function helloWorld(){
@@ -28,4 +36,9 @@ function mobileNav() {
     }
   });
 
+}
+
+function setRealViewportHeight() {
+  const height = window.visualViewport?.height || window.innerHeight;
+  document.body.style.setProperty('--real-vh', `${height}px`);
 }

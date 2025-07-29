@@ -6,6 +6,8 @@
   --secondary-color: #9D57FF;
   --thin-border: 1.5px solid var(--primary-color);
   --spacing: 1rem 1.5rem;
+
+  --real-vh: 100vh;
  }
  
  /* RESETS */
@@ -233,7 +235,7 @@ section .painting, section .series {
 }
 
 .painting section.main {
-  height: 98vh;
+  height: calc(var(--real-vh) - 2vh);
   display: flex;
   justify-content: center;
   align-items: center;
