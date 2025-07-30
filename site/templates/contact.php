@@ -5,11 +5,12 @@
 <?php if($page->title()->lower() == "thanks"): 
   $contact = $page->siblings()->listed()->first();
   ?> 
+  
+  <a href="<?= url('about/contact')?>" class="purple-link back">Back to Contact </a>
   <div class="alert success">
     <h2><?= $contact->success() ?></h2>
-</br>
+    </br>
   </div>  
-  <a class="crumb" href="<?= url('about/contact')?>"><span class="back-arrow">←</span> Back to form </a>
 
 <?php else: ?>  
   <h1><?= $page->title()->html() ?></h1>
@@ -19,15 +20,18 @@
   <!-- Replace with your Access Key -->
   <input type="hidden" name="access_key" value="<?= $page->secret() ?>">
 
-  <!-- Subject Line -->
-  <input type="hidden" name="subject" id="subject" value="<?= $page->subject()?>">
-  <input type="hidden" name="from_name" value="Zavi Website Form">
-
   <!-- Form Inputs -->
   <div class="field">
     <label for="name">Name <abbr title="required">*</abbr></label>
     <input type="text" name="name"  id="name" required>
   </div>
+
+  <div class="field">
+    <label for="email">Subject <abbr title="required">*</abbr></label>
+    <input name="subject" id="subject" value="">
+    <input type="hidden" name="from_name" value="<?= $page->subject()?>">
+  </div>
+
   <div class="field">
     <label for="email">Email <abbr title="required">*</abbr></label>
     <input type="email" name="email" id="email" required>

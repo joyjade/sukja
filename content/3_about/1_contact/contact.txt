@@ -6,7 +6,7 @@ About-label: Contact the artist
 
 ----
 
-Secret: 
+Secret: baaec0c2-18ad-4e13-b9b6-79b0f469c22c
 
 ----
 
@@ -14,7 +14,7 @@ Subject:
 
 ----
 
-Success: 
+Success: Thanks for reaching out!
 
 ----
 
