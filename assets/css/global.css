@@ -20,7 +20,7 @@
 }
 
 :focus {
-	outline: none;
+	outline: thin dotted;
 }
 
 ::selection {
@@ -35,6 +35,10 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+}
+
+a:focus h3 {
+  outline: thin dotted;
 }
 
 img {
@@ -389,6 +393,11 @@ section .painting, section .series {
   font-size: 1.1rem;
 }
 
+.contact form input:focus, .contact form textarea:focus {
+  border-width: 1.5px;
+  outline: none;
+}
+
 .contact form textarea {
   min-height: 200px;
 }
@@ -412,6 +421,7 @@ section .painting, section .series {
   margin: 0 auto 5rem;
 }
 
-.contact form button:hover, .contact form button:active {
+.contact form button:hover, .contact form button:active, .contact form button:focus {
   --button-color: black;
+  outline: none;
 }

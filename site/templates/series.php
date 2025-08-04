@@ -26,11 +26,11 @@
                 $photo = $painting->files()->sorted()->first();
                 snippet ('painting-srcset', ['photo' => $photo, 'max' => 'grid'])
               ?>
-        </a>
         <h3><?= $painting->title()?></h3>
-        <p class="subtitle"><?= $painting->specs() ?></p>
+      </a>
+      <p class="subtitle"><?= $painting->specs() ?></p>
       </div>
-      
+
     <?php endforeach ?>	
   </div>
 

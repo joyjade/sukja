@@ -3,7 +3,7 @@
     <?= $page->bio()->kirbytext() ?>
   </section>
   <section class="links">
-    <?php foreach($page->children() as $link): ?>
+    <?php foreach($page->children()->listed() as $link): ?>
       <a href="<?= $link->url() ?>" class="purple-link"><?= $link->about_label()?></a>
     <?php endforeach ?>
   </section>
