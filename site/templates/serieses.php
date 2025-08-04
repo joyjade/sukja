@@ -1,4 +1,5 @@
 <?php snippet('nav') ?>
+
 <section class="main">
   <?php foreach ($page->children()->listed()->sortBy('year', 'desc') as $series): ?>
     <div class="series">
@@ -14,6 +15,7 @@
     </div>
     <?php endforeach ?>	
 </section>
+
 <section class="pseudo-footer">
   <a href="/" class="purple-link">
     Contact the artist about pricing and availability

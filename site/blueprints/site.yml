@@ -19,7 +19,7 @@ tabs:
             type: pages
             parent: site.find('series')
   
-  info: 
+  pages: 
     label: All Pages
     sections: 
       info: 
@@ -31,14 +31,26 @@ tabs:
         templates:
           - serieses
           - paintings
+  home: 
+    label: Home
+    sections: 
       home: 
         type: fields
         fields: 
           banner:
-            type: files
-            label: Home 
-            query: site.find('home')
-            template: banner-image
-            multiple: false
-            help: Banner image on home page
+            extends: sections/banner
+            width: 1/2
+            size: huge
+            label: Banner Image
+            image: 
+              ratio: 16/9
+          mobile:
+            extends: sections/banner
+            help: Cropped banner image for mobile
+            label: Mobile
+            width: 1/4
+            image:
+              ratio: 4/5
+          
+            
 

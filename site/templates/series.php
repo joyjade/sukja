@@ -19,7 +19,18 @@
 
   <div class="gallery">
     <?php foreach ($page->children()->listed() as $painting): ?>
-      <?php snippet('painting', ['painting' => $painting, 'classroom' => 'series']) ?>      
+
+      <div class="series">
+        <a href="<?= $painting->url() ?>">
+          <?php 
+                $photo = $painting->files()->sorted()->first();
+                snippet ('painting-srcset', ['photo' => $photo, 'max' => 'grid'])
+              ?>
+        </a>
+        <h3><?= $painting->title()?></h3>
+        <p class="subtitle"><?= $painting->specs() ?></p>
+      </div>
+      
     <?php endforeach ?>	
   </div>
 

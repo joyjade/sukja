@@ -1,5 +1,5 @@
 title: Contact
-icon: 📮
+icon: 📬
 
 image:
   query: false
@@ -11,6 +11,7 @@ options:
   delete: false
   duplicate: false
   move: false
+  changeStatus: false
 
 
 columns: 

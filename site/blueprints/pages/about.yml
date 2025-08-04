@@ -1,5 +1,5 @@
 title: About
-icon: user
+icon: 🌺
 
 image:
   back: black
@@ -17,3 +17,5 @@ sections:
   inner:
     label: More
     type: pages
+    status: listed
+

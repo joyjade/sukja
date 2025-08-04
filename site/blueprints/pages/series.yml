@@ -11,6 +11,9 @@ create:
     - year
     - materials
 
+navigation:
+  status: all
+
 sections: 
   description:
     type: fields

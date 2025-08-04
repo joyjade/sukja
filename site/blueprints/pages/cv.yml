@@ -1,9 +1,22 @@
 title: CV
-icon: "info-card"
+icon: 🗂️
 
 image:
+  query: false
   back: black
   color: white
+
+
+
+options:
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  move: false
+  changeStatus: false
+  changePosition: false 
+  changeSlug: false
+
 
 fields:
   about_label:

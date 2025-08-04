@@ -2,7 +2,6 @@ title: Banner Image
 
 image:
   back: white
-  ratio: 16/9
   cover: true
 
 options:
@@ -12,8 +11,8 @@ fields:
   alt:
     label: Alt Text
     type: text
-    width: 1/2
+    width: 2/3
   photographer:
     label: Credit
     type: text
-    width: 1/2
+    width: 1/3
