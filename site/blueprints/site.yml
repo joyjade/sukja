@@ -1,5 +1,44 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  main: 
+    label: Paintings
+    columns: 
+      - width: 1/2
+        sections:
+          current:
+            type: pages
+            parent: site.find('paintings')
+            image: 
+              cover: true
+
+
+      - width: 1/2
+        sections:
+          series:
+            type: pages
+            parent: site.find('series')
+  
+  info: 
+    label: All Pages
+    sections: 
+      info: 
+        type: pages
+        template: about
+      art: 
+        type: pages
+        parent: site
+        templates:
+          - serieses
+          - paintings
+      home: 
+        type: fields
+        fields: 
+          banner:
+            type: files
+            label: Home 
+            query: site.find('home')
+            template: banner-image
+            multiple: false
+            help: Banner image on home page
+

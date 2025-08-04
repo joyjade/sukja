@@ -16,7 +16,7 @@ columns:
       listed:
         parent: site.find("series")
         type: pages
-        label: Published
+        label: Live
         status: listed
         layout: cardlets  
         template: series
@@ -34,9 +34,9 @@ columns:
       unlisted:
         parent: site.find("series")
         type: pages
-        label: Live 
+        label: Unlisted 
         status: unlisted
         layout: list
         template: series
-        help: Live but not in feed, need a direct link
+        help: Live pages that need a direct link to access
       

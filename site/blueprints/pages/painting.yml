@@ -39,7 +39,7 @@ columns:
       materials:
         width: 1/3
         type: text
-        help: this will override materials set in the series
+        help: You can set materials here, or at the series page. Setting materials here will override series' materials. 
       # cover: 
       #   type: files
       #   multiple: false
