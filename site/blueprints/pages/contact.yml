@@ -21,7 +21,10 @@ columns:
     fields: 
       about_label:
         type: text
-        label: Link text on About page 
+        label: Link text on About page
+      details:
+        type: textarea
+        label: Contact details
       secret: 
         type: text
         label: Authorization Key

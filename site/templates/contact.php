@@ -15,6 +15,9 @@
 <?php else: ?>  
   <h1><?= $page->title()->html() ?></h1>
 
+  
+  <p><?= $page->details()->html() ?></p>
+
   <form action="https://api.web3forms.com/submit" method="POST" id="contact">
 
   <!-- Replace with your Access Key -->

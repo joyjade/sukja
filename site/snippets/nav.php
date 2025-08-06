@@ -18,7 +18,7 @@
       <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
     </div>
     <nav>
-      <div class="hamb">
+      <div class="hamb" aria-label="menu">
         <!-- <label for="side-menu"> -->
           <div class="hamb-line"></div>
       </div>

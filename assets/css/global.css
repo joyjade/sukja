@@ -117,7 +117,6 @@ body.freeze {
 nav {
   position: relative;
   display: flex;
-  /* margin-bottom: 2rem; */
 }
 
 nav a {
@@ -126,22 +125,42 @@ nav a {
   color: var(--primary-color);
 }
 
-nav a.active {
+nav a.active, footer a.active {
   color: black;
 }
 
-nav a:hover, .title a:hover {
+nav a:hover, .title a:hover, footer a:hover, .about .links a:hover, .insta a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 12px;
   text-decoration-color: black;
 }
 
-nav a.active {
+nav a.active, footer a.active {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 12px;
   text-decoration-color: black;
+}
+
+.about .links a {
+  font-size: 1.3rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  /* font-size: 1.2rem; */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer ul li:first-of-type {
+  padding-right: 2rem;
+}
+
+footer a {
+  text-transform: capitalize;
 }
 
 
@@ -152,8 +171,11 @@ body {
   padding: var(--spacing);
 }
 
-.header {
+.header, footer {
  font-size: calc(1.2rem + 0.22vw);
+}
+
+.header {
  display: flex;
  justify-content: space-between;
 }
@@ -164,28 +186,6 @@ section:first-of-type {
 
 .feature-img {
   width: 100%;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-footer ul li:first-of-type {
-  padding-right: 2rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: var(--secondary-color);
-}
-
-.pseudo-footer {
-  font-size: 1.2rem;
-  text-align: center;
 }
 
 /* PAINTING + SERIES GRIDS */
@@ -305,13 +305,9 @@ section .painting, section .series {
 
 /* OTHER PAGES */
 
-
-.home section {
-  min-height: 78vh;
-}
-
 .about section:first-of-type {
   width: 80%;
+  padding-left: 2rem;
 }
 
 .about section {
@@ -340,6 +336,7 @@ section .painting, section .series {
 
 .cv section {
   line-height: 1.5;
+  padding-left: 2rem;
 }
 
 .cv strong {
@@ -358,7 +355,6 @@ section .painting, section .series {
 .cv section a:hover {
   color: var(--secondary-color);
 }
-
 
 .contact section.content {
   max-width: 600px; 

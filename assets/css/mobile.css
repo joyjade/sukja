@@ -9,8 +9,13 @@
     display: flex;
   }
 
-  .m-footer {
+  .m-footer, 
+  .mobile-crop {
     display: none;
+  }
+
+  .desktop-crop {
+    display: block;
   }
 
 }
@@ -46,7 +51,7 @@
 }
 
 .hamb-line {
-  top: 2px;
+  top: 3px;
 }
 
 .hamb-line:before {
@@ -133,13 +138,16 @@
     z-index: 10;
   }
 
-  footer {
-    display: none;
-  }
-  .m-nav {
+  footer, 
+  .m-nav, 
+  .desktop-crop {
     display: none;
   }
 
+  .mobile-crop {
+    display: block;
+  }
+  
   nav a {
     margin-left: 0;
   }
@@ -147,10 +155,6 @@
   .m-nav li {
     text-align: center;
     padding-bottom: 1rem;
-  }
-
-  .m-footer {
-    padding-top: 4rem;
   }
 
   .header {

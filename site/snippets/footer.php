@@ -1,16 +1,15 @@
 <?php 
   $contact = $site->find('about/contact');
   $insta = $site->find('about')->instagram();
-  $template = $page->template()->name()
+  // $template = $page->template()->name()
+  // $template == 'painting' || $template =='paintings') ? 'Contact the artist about pricing and availability' : 'Contact'
 
   ?>
 
 <footer>
   <ul>
     <li>
-      <a href="<?= $contact->url()?>">
-        <?= ( $template == 'painting' || $template =='paintings') ? 'Contact the artist about pricing and availability' : 'Contact' ?>
-      </a>
+      <a href="<?= $contact->url()?>">Contact</a>
     </li>
     <li>
       <a href="<?= $insta ?>" target="_blank">Instagram</a>

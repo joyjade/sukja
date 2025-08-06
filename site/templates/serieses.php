@@ -16,9 +16,4 @@
     <?php endforeach ?>	
 </section>
 
-<section class="pseudo-footer">
-  <a href="/" class="purple-link">
-    Contact the artist about pricing and availability
-  </a>
-</section>
 <?php snippet('footer') ?>
