@@ -1,0 +1,22 @@
+num: "{{ page.publishedAt.toDate }}"
+
+options:
+  changeTitle: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  move: false
+  duplicate: false
+  delete: false
+  preview: "https://youtu.be/{{ page.uuid.id }}"
+
+# TODO: query language doesn't work yet in view buttons
+buttons:
+  preview:
+    icon: youtube
+    text: '{{ t("socialstar.youtube.video") }}'
+    theme: red-icon
+    link: "https://youtu.be/{{ page.uuid.id }}"
+
+tabs:
+  youtube: socialstar/youtube-video
