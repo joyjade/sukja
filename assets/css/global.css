@@ -335,12 +335,13 @@ section .painting, section .series {
 .about .insta .headline {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 /* instagram feed */
 
-div#eapps-instagram-feed-1 {
-  padding-top: 1rem;
+.about .elfsight-app-918b3613-98b1-4b21-bb57-c71c366f8eaf {
+  min-height: 100px;
 }
 
 .eapps-widget-toolbar {
