@@ -4,18 +4,24 @@ icon: 🌺
 image:
   back: black
 
-sections:
+tabs:
   main: 
-    type: fields
-    fields: 
-      bio: 
-        type: textarea
-        label: About
-      instagram:
-        type: link
+    sections:
+      main: 
+        type: fields
+        fields: 
+          bio: 
+            type: textarea
+            label: About
+          instagram:
+            type: link
 
-  inner:
-    label: More
-    type: pages
-    status: listed
+      inner:
+        label: More
+        type: pages
+        status: listed
+    
+  # instagram: socialstar/instagram
+  
+
 

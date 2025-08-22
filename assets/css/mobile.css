@@ -104,6 +104,11 @@
   }
 }
 
+.paintings .painting figure img {
+  max-width: 60vw;
+}
+
+
 @media screen and (max-width: 980px) { 
   section .painting, section .series {
     padding: 3rem 0;
@@ -178,7 +183,7 @@
     padding: 1rem 0;
   }
 
-  .painting figure img, .series figure img, .serieses img {
+  .painting figure img, .series figure img, .serieses img, .paintings .painting figure img {
     max-width: 100%;
   }
 }

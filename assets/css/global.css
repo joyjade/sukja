@@ -223,16 +223,19 @@ section .painting, section .series {
   margin-top: 1.5rem;
   width: auto;
   height: auto;
-  max-width: 400px;
-  max-height: 500px;
+  /* max-width: 400px;
+  max-height: 500px; */
+  max-width: 60vw;
+  max-height: 70vh;
 }
 
 .paintings .painting figure img {
-  max-width: 300px;
+  max-width: 20vw;
 }
 
 .painting figure img {
-  max-width: 600px;
+  max-width: 60vw;
+  /* max-width: 600px; */
 }
 
 
@@ -329,10 +332,21 @@ section .painting, section .series {
   margin-right: 1rem;
 }
 
-.about .insta > div {
+.about .insta .headline {
   display: flex;
   justify-content: space-between;
 }
+
+/* instagram feed */
+
+div#eapps-instagram-feed-1 {
+  padding-top: 1rem;
+}
+
+.eapps-widget-toolbar {
+  display: none !important
+}
+
 
 .cv section {
   line-height: 1.5;
