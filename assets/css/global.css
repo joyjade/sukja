@@ -223,16 +223,19 @@ section .painting, section .series {
   margin-top: 1.5rem;
   width: auto;
   height: auto;
-  max-width: 400px;
-  max-height: 500px;
+  /* max-width: 400px;
+  max-height: 500px; */
+  max-width: 60vw;
+  max-height: 70vh;
 }
 
 .paintings .painting figure img {
-  max-width: 300px;
+  max-width: 20vw;
 }
 
 .painting figure img {
-  max-width: 600px;
+  max-width: 60vw;
+  /* max-width: 600px; */
 }
 
 
