@@ -10,13 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('resize', setRealViewportHeight);
 });
 
-function helloWorld(){
-  document.onclick = function(e) {
-    e.preventDefault;
-    alert('Hello World');
-  }
-}
-
 function mobileNav() {
   let hamb = document.querySelector('.hamb');
   let nav = document.querySelector('.m-nav');

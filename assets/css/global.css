@@ -329,10 +329,21 @@ section .painting, section .series {
   margin-right: 1rem;
 }
 
-.about .insta > div {
+.about .insta .headline {
   display: flex;
   justify-content: space-between;
 }
+
+/* instagram feed */
+
+div#eapps-instagram-feed-1 {
+  padding-top: 1rem;
+}
+
+.eapps-widget-toolbar {
+  display: none !important
+}
+
 
 .cv section {
   line-height: 1.5;
