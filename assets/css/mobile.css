@@ -102,11 +102,11 @@
   .section .painting, section .series, .paintings .painting {
     width: 50%;
   }
+  .paintings .painting figure img {
+    max-width: 60vw;
+  }
 }
 
-.paintings .painting figure img {
-  max-width: 60vw;
-}
 
 
 @media screen and (max-width: 980px) { 
