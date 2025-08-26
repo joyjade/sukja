@@ -11,7 +11,7 @@
   <section class="insta">
     <div class='headline'>
       <span>Recent posts on Instagram</span>
-      <a href="">Follow @sukjakang</a>
+      <a href="<?= $page->instagram() ?>">Follow @sukjakang</a>
     </div>  
 <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
     <script src="https://elfsightcdn.com/platform.js" async></script>

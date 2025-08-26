@@ -334,6 +334,7 @@ section .painting, section .series {
 .about .insta .headline {
   display: flex;
   justify-content: space-between;
+  font-size: 1.3rem;
 }
 
 /* instagram feed */

@@ -19,16 +19,12 @@
   }
 
   .about section:first-of-type {
-    width: 80%;
     padding-left: 2rem;
   }
 
   .cv section {
-    line-height: 1.5;
     padding-left: 2rem;
   }
-  
-
 }
 
 /* ham nav */
@@ -95,8 +91,6 @@
 .hamb.show .hamb-line:after {
   transform: translate3d(0, -18px, 0) rotate(-90deg);
 }
-
-
 
 @media screen and (min-width: 981px) {  
   .section .painting, section .series, .paintings .painting {
@@ -191,6 +185,10 @@
 
   .painting .painting {
     padding: 1rem 0;
+  }
+
+  .about .insta .headline {
+    flex-flow: column;
   }
 
   .painting figure img, .series figure img, .serieses img, .paintings .painting figure img {
