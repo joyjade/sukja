@@ -225,7 +225,8 @@ section .painting, section .series {
   height: auto;
   /* max-width: 400px;
   max-height: 500px; */
-  max-width: 60vw;
+  /* max-width: 60vw; */
+  max-width: 80%;
   max-height: 70vh;
 }
 

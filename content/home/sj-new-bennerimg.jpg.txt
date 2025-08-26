@@ -1,0 +1,5 @@
+Uuid: cmuspfoorjwo6pvf
+
+----
+
+Template: banner-image

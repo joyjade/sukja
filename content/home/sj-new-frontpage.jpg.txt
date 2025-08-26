@@ -1,0 +1,5 @@
+Uuid: eejtejuz3puqjtz5
+
+----
+
+Template: banner-image

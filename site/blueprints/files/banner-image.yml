@@ -1,5 +1,12 @@
 title: Banner Image
 
+focus: false
+accept: 
+  mime: image/*
+
+create:
+  width: 3000
+
 image:
   back: white
   cover: true

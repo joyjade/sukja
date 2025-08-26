@@ -9,6 +9,7 @@ tabs:
           current:
             type: pages
             parent: site.find('paintings')
+            template: painting
             image: 
               cover: true
 
@@ -19,6 +20,7 @@ tabs:
             type: pages
             parent: site.find('series')
             sortBy: year desc
+            template: series
   
   pages: 
     label: All Pages
