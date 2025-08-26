@@ -18,6 +18,7 @@ tabs:
           series:
             type: pages
             parent: site.find('series')
+            sortBy: year desc
   
   pages: 
     label: All Pages
