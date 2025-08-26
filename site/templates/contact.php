@@ -15,9 +15,9 @@
 <?php else: ?>  
   <h1><?= $page->title()->html() ?></h1>
 
-  
-  <p><?= $page->details()->html() ?></p>
-
+  <?php if( $details=$page->details()->kirbytext() ) :?>
+  <div class="details"><?= $details ?></div>
+  <?php endif ?>
   <form action="https://api.web3forms.com/submit" method="POST" id="contact">
 
   <!-- Replace with your Access Key -->
@@ -29,11 +29,11 @@
     <input type="text" name="name"  id="name" required>
   </div>
 
-  <div class="field">
+  <input type="hidden" name="subject" id="subject" value="<?= $page->subject()?>">
+  <!-- <div class="field">
     <label for="email">Subject <abbr title="required">*</abbr></label>
-    <input name="subject" id="subject" value="">
     <input type="hidden" name="from_name" value="<?= $page->subject()?>">
-  </div>
+  </div> -->
 
   <div class="field">
     <label for="email">Email <abbr title="required">*</abbr></label>

@@ -25,6 +25,7 @@ columns:
       details:
         type: textarea
         label: Contact details
+        help: Description below header, if you'd like to include more information and details. 
       secret: 
         type: text
         label: Authorization Key

@@ -13,7 +13,10 @@
     <?php if ($materials): ?>
       <p class="subtitle" id="materials"><?= $materials ?></p>
     <?php endif ?>
-      <p class="subtitle"><?= $page->specs() ?></p>
+    <p class="subtitle"><?= $page->specs() ?></p>
+    <?php if( $year = $page->year()->toDate('Y')) :?>
+      <p class="subtitle"><?= $year ?></p>
+    <?php endif ?>
   </div>
 
   <!-- NAVIGATION -->

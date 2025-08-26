@@ -4,8 +4,8 @@
 
     <h1><?= $page->title() ?></h1>
     
-    <?php if ($page->description()->isNotEmpty()): ?>
-      <p class="description"><?= $page->description() ?></p>
+    <?php if ($page->text()->isNotEmpty()): ?>
+      <p class="description"><?= $page->text() ?></p>
     <?php endif ?>
     
     <?php if ($page->materials()->isNotEmpty()): ?>

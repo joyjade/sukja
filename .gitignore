@@ -49,6 +49,7 @@ Icon
 
 /site/config/.license
 /site/config/config.php
+/site/config/config.dev.php
 
 # Composer files
 # ---------------

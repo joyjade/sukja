@@ -296,8 +296,8 @@ section .painting, section .series {
 }
 
 .series .description {
-  font-size: 1.1rem;
-  margin-top: 1rem;
+  font-size: 1.2em;
+  margin: 1rem;
   opacity: 0.7;
 }
 
@@ -388,6 +388,19 @@ div#eapps-instagram-feed-1 {
 
 .contact h2 {
   margin-top: 4rem;
+}
+
+.contact .details {
+  font-size: 1.2em;
+  margin: 1rem 0 3rem;
+}
+
+.details a {
+  text-decoration: underline;
+}
+
+.details a:hover {
+  color: var(--secondary-color);
 }
 
 .contact form input, .contact form textarea {
