@@ -18,6 +18,17 @@
     display: block;
   }
 
+  .about section:first-of-type {
+    width: 80%;
+    padding-left: 2rem;
+  }
+
+  .cv section {
+    line-height: 1.5;
+    padding-left: 2rem;
+  }
+  
+
 }
 
 /* ham nav */
@@ -106,7 +117,6 @@
     max-width: 60vw;
   }
 }
-
 
 
 @media screen and (max-width: 980px) { 

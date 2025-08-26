@@ -310,7 +310,6 @@ section .painting, section .series {
 
 .about section:first-of-type {
   width: 80%;
-  padding-left: 2rem;
 }
 
 .about section {
@@ -350,7 +349,6 @@ div#eapps-instagram-feed-1 {
 
 .cv section {
   line-height: 1.5;
-  padding-left: 2rem;
 }
 
 .cv strong {
